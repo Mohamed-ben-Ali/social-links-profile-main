@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-color: hsl(0, 0%, 100%);
+  --alt-color: hsl(75, 94%, 57%);
+  --prim-color: hsl(0, 0%, 20%);
+}
+body {
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  color: var(--main-color);
+}
+a{
+  text-decoration: none;
+  color: var(--main-color);
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  text-align: center;
+  background-color: hsl(0, 0%, 12%);
+  width: 330px;
+  height: 550px;
+  border-radius: 8px;
+  padding: 20px;
+}
+.box img {
+  width: 80px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.box .name {
+  color: var(--main-color);
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.box .location {
+  color: var(--alt-color);
+  font-size: 14px;
+  font-weight: 700;
+}
+.box .title {
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+.box .links {
+}
+.box .links .link {
+    background-color: var(--prim-color);
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.box .links .link a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 600;
+}
+.box .links .link:hover{
+    background-color: var(--alt-color);
+    cursor: pointer;
+    
+}
+.box .links .link:hover a{
+    color: var(--prim-color);
+}
